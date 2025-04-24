@@ -1,0 +1,84 @@
+.container{
+    position: relative;
+    width: 400px;
+    height: 500;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container::before, .container::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    background: linear-gradient(45deg, rgb(153, 0, 255), rgb(255,255,255), rgb(255,255,255), rgb(153, 0, 255));
+    animation: animate 5s linear infinite;
+    border-radius: 10px; 
+    background-size:300%;
+}
+
+@keyframes animate {
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 300%;
+    }
+}
+
+.container::after{
+    filter: blur(50px);
+}
+
+
+.form-container{
+    position: relative;
+    z-index: 1;
+}
+
+.form-container label span{
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form-container input[type="number"]{
+    width: 100%;
+    padding: 20px 0px;
+    border: none;
+    background-color: white;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.form-container input[type="number"]::placeholder{
+    padding: 10px;
+}
+
+.container-btn{
+    display: flex;
+    justify-content:center;
+}
+.container-btn input, .container-btn button{
+    width: 100%;
+    margin-top: 50px;
+    border: none;
+}
+
+.container-btn input{
+    margin-right: 10px;
+    padding: 14px;
+    width: 220px;
+    border-radius: 5px;
+    background-color: red;
+    cursor: pointer;
+    font-weight: bold;
+}
