@@ -1,0 +1,21 @@
+button{   
+    padding: 20px 40px;
+    font-weight: bold;
+    margin: 50px 10px 0px 10px;
+    background-color: rgb(21, 0, 78);
+    color: white;
+    border: none;
+    opacity: 0.9;
+    border-radius: 10px;
+    cursor: pointer;
+    flex: 1;
+}
+
+button:hover{
+    background-color: rgb(29, 0, 109) ;
+    opacity: 1;
+}
+
+#clear-btn{
+    background-color: #363636;
+}

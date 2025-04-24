@@ -1,10 +1,11 @@
+
 .container{
     position: relative;
     width: 400px;
-    height: 500;
-    padding: 50px;
+    height: 500px;
     border-radius: 10px;
-    background-color: rgb(0, 0, 0);
+    background-color: #1d1e33;
+    padding: 30px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -15,10 +16,10 @@
 .container::before, .container::after{
     content: '';
     position: absolute;
-    z-index: -1;
-    width: calc(100% + 20px);
-    height: calc(100% + 20px);
-    background: linear-gradient(45deg, rgb(153, 0, 255), rgb(255,255,255), rgb(255,255,255), rgb(153, 0, 255));
+    z-index: -2;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    background: linear-gradient(45deg, rgb(153, 0, 255), rgb(255,255,255), rgb(255,255,255), rgb(153, 0, 255), rgb(153, 0, 255));
     animation: animate 5s linear infinite;
     border-radius: 10px; 
     background-size:300%;
@@ -36,8 +37,6 @@
 .container::after{
     filter: blur(50px);
 }
-
-
 .form-container{
     position: relative;
     z-index: 1;
@@ -48,12 +47,14 @@
     text-align: left;
     font-weight: bold;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .form-container input[type="number"]{
     width: 100%;
-    padding: 20px 0px;
+    padding: 20px 5px;
     border: none;
+    border-radius: 10px;
     background-color: white;
     margin-bottom: 10px;
     color: black;
@@ -66,19 +67,47 @@
 .container-btn{
     display: flex;
     justify-content:center;
-}
-.container-btn input, .container-btn button{
-    width: 100%;
-    margin-top: 50px;
-    border: none;
+    align-items: center;
 }
 
-.container-btn input{
-    margin-right: 10px;
-    padding: 14px;
-    width: 220px;
-    border-radius: 5px;
-    background-color: red;
-    cursor: pointer;
-    font-weight: bold;
-}
+#title{
+    text-shadow:5px 0px 20px red;
+    animation: shadow 5s linear infinite;
+    margin-bottom: 10px;
+ }
+ 
+ @keyframes shadow {
+    0%{
+        text-shadow: 0px 0px 20px red;
+    }
+    10%{
+        text-shadow: 0px 0px 20px yellow;
+    }
+    20%{
+        text-shadow: 0px 0px 20px orange;
+    }
+    30%{
+        text-shadow: 0px 0px 20px yellowgreen;
+    }
+    40%{
+        text-shadow: 0px 0px 20px green;
+    }
+    50%{
+        text-shadow: 0px 0px 20px rgb(149, 149, 251);
+    }
+    60%{
+        text-shadow: 0px 0px 20px blue;
+    }
+    70%{
+        text-shadow: 0px 0px 20px rgb(252, 149, 252) ;
+    }
+    80%{
+        text-shadow: 0px 0px 20px rgb(254, 98, 230); 
+    }
+    90%{
+        text-shadow: 0px 0px 20px purple;
+    }
+    100%{
+        text-shadow: 0px 0px 20px red;
+    }
+ }
