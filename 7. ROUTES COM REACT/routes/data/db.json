@@ -1,0 +1,65 @@
+{
+  "products": [
+    {
+      "id": 5,
+      "name": "capa de chuva",
+      "price": "50.50"
+    },
+    {
+      "id": 6,
+      "name": "Teclado",
+      "price": "110"
+    },
+    {
+      "id": 7,
+      "name": "Cadeira",
+      "price": "200"
+      
+    },
+    {
+      "id": "b217",
+      "name": "Notebook",
+      "price": "5000"
+    },
+    {
+      "id": "9d20",
+      "name": "Biquini de Fita",
+      "price": "12"
+    },
+    {
+      "id": "ad02",
+      "name": "Mesa",
+      "price": "1000"
+    },
+    {
+      "id": "b9cb",
+      "name": "Cadeira",
+      "price": "1500"
+    },
+    {
+      "id": "191d",
+      "name": "Computador",
+      "price": "12000"
+    },
+    {
+      "id": "775d",
+      "name": "Biquini de cortininha",
+      "price": "12"
+    },
+    {
+      "id": "e213",
+      "name": "Biquini",
+      "price": "33"
+    },
+    {
+      "id": "4af2",
+      "name": "Biquini de Asadelta",
+      "price": "35"
+    },
+    {
+      "id": "dec8",
+      "name": "Garrafa de Café",
+      "price": "20"
+    }
+  ]
+}
