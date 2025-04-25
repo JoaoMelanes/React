@@ -10,6 +10,7 @@ import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom'
 import Contact from './routes/Contact.jsx'
 import Home from './routes/Home.jsx'
 import Product from './routes/Product.jsx'
+import Info from './routes/Info.jsx'
 
 // config error
 import ErrorPage from './routes/ErrorPage.jsx'
@@ -33,6 +34,11 @@ const router = createBrowserRouter([
       {
         path:"products/:id",
         element: <Product />,
+      },
+      // rota aninhada
+      {
+        path:"products/:id/info",
+        element:<Info />
       }
     ]
   },
