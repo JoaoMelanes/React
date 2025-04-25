@@ -60,6 +60,11 @@
       "id": "dec8",
       "name": "Garrafa de Café",
       "price": "20"
+    },
+    {
+      "id":"10",
+      "name":"short",
+      "price": "10"
     }
   ]
 }
