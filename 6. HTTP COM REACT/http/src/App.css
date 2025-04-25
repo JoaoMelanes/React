@@ -40,3 +40,21 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.add-products {
+  border-top: 1px solid #000;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+form label{
+  display: flex;
+  flex-direction: column;
+}
